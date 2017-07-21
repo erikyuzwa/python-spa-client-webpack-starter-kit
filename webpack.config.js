@@ -7,10 +7,16 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+const isProd = (process.env.NODE_ENV === 'production');
+
 let plugins = [];
 
+// if we're building for production...
+if (!!isProd) {
+    plugins.push(new webpack.optimize.UglifyJsPlugin());
+}
+
 plugins.push(new CleanWebpackPlugin(['dist']));
-plugins.push(new webpack.optimize.UglifyJsPlugin());
 
 plugins.push(new HtmlWebpackPlugin({
     filename: path.resolve(__dirname, 'dist/templates/index.html'),
@@ -37,7 +43,7 @@ const config = {
     module: {
         rules: [
             {
-            test: /\.js$/,
+            test: /\.(js|jsx)$/,
             exclude: /(node_modules|bower_components)/,
             use: {
                 loader: 'babel-loader',
