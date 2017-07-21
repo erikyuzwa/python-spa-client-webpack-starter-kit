@@ -21,15 +21,15 @@ JQuery, Angular, React, Vue, etc.
 
 Your source files should go into `app/static/scripts`
 
-## running local dev server
+## running local Python Flask dev server
 
 * `npm start`
-* open `http://localhost:5000`
+* open `http://localhost:5000` in your favorite browser
 
 ## building for distribution
 
 * `npm run build`
-* copy all contents of `dist` folder to your webserver
+* copy `dist/*` to your webserver
 
 # LICENSE
 
