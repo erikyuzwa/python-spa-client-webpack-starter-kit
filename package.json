@@ -1,11 +1,11 @@
 {
-  "name": "roguelike-f2p",
+  "name": "python-spa-client-webpack-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "a starter kit for using python to serve an API or SPA",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p --progress --colors --profile",
-    "preinstall": "pip install -r requirements.txt",
+    "postinstall": "virtualenv venv --system-site-packages",
     "prestart": "webpack --progress --profile",
     "start": "cd dist && python main.py"
   },

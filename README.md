@@ -5,7 +5,12 @@ quick template to create a python flask server, pushing out a spa index.html usi
 
 * `npm`
 * `node`
-* `python` is in your PATH (either 2.7.x or 3.6.x)
+* `python` and `pip` are in your PATH (either 2.7.x or 3.6.x)
+
+## installing python and pip (Mac)
+
+* `brew install python` (for python 2.7.x) or `brew install python3` (for python 3.6.x)
+* `sudo easy_install pip`
 
 ## dev installation
 
@@ -13,6 +18,9 @@ quick template to create a python flask server, pushing out a spa index.html usi
 * `cd appname`
 * `npm install`
 * both python and web frontend dependencies should be installing
+* once completed, activate the python virtualenv `source venv/bin/activate` 
+  you should see a `(venv)` in shell prompt after that completes
+* then `pip install -r requirements.txt`
 
 ## where to put your SPA assets
 
@@ -20,6 +28,11 @@ At this point, you should be able to drop in whatever framework or library you w
 JQuery, Angular, React, Vue, etc.
 
 Your source files should go into `app/static/scripts`
+
+## enabling and disabling python virtualenv (must be done in ACTIVE shell prompt)
+
+* to activate - `source venv/bin/activate`
+* to deactivate - `deactivate`
 
 ## running local Python Flask dev server
 
