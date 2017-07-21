@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p --progress true --colors true",
+    "build": "webpack -p --progress --colors --profile",
     "preinstall": "pip install -r requirements.txt",
-    "prestart": "webpack --progress true",
+    "prestart": "webpack --progress --profile",
     "start": "cd dist && python main.py"
   },
   "author": "Erik Yuzwa <hello@erikyuzwa.com>",
