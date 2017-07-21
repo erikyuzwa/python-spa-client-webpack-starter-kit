@@ -1,4 +1,4 @@
-# python-spa-client-webpack-template
+# python-spa-client-webpack-starter-kit
 quick template to create a python flask server, pushing out a spa index.html using webpack
 
 ## prerequisites
@@ -9,7 +9,7 @@ quick template to create a python flask server, pushing out a spa index.html usi
 
 ## dev installation
 
-* `git clone https://github.com/erikyuzwa/python-spa-client-webpack-template.git appname`
+* `git clone https://github.com/erikyuzwa/python-spa-client-webpack-starter-kit.git appname`
 * `cd appname`
 * `npm install`
 * both python and web frontend dependencies should be installing
